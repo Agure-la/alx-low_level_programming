@@ -4,7 +4,7 @@
 /**
  * print_numbers - Prints the numbers from 0-9.
  */
-int _isdigit(int)
+int _isdigit(int c)
 {
 	int num;
 
