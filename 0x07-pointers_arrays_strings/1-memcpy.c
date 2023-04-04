@@ -1,13 +1,16 @@
-#include "main.h"
+#include "holberton.h"
 
-void *_memcpy(void *dest, const void *src, size_t n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
-	unsigned char *destination = dest;
-	const unsigned char *source = src;
+	int i = 0;
+	int j = 0;
 
-	for (i = 0; i < n; i++)
-		destination[i] = source[i];
-
+	while (n > 0)
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+		n--;
+	}
 	return (dest);
 }
