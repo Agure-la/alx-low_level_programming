@@ -1,6 +1,13 @@
 #include "dog.h"
 #include <stdlib.h>
 
+/**
+ * new_dog - creates a new dog.
+ * @name: pointer to a char for name of dog which will be astring
+ * @age: age of dog which is a flaot
+ * @owner: pointer to a char for owner of dog which is a String
+ * Return: pointer to a new dog of type dog_t which is a structure
+ **/
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int name_length, owner_length, i;
